@@ -65,6 +65,20 @@ Network Connection With event = 3
 Files Creation Analysis With event = 11
 
 
+<img width="1920" height="1080" alt="Macro setting" src="https://github.com/user-attachments/assets/8d28a0fe-ac7d-4de1-8556-d45b3652614f" />
+Mcaro Setting to 
+
+
+<img width="1920" height="1080" alt="Isolating the affected device" src="https://github.com/user-attachments/assets/f821a5cc-8ee1-4b97-9eaf-9484fa99b6b3" />
+
+<img width="1920" height="1080" alt="Isolating the affected device 2" src="https://github.com/user-attachments/assets/2a79b85c-4c8d-489c-bf5a-da2f27e5f184" />
+Isolating Affected Device
+
+
+
+<img width="1920" height="1080" alt="schedual task " src="https://github.com/user-attachments/assets/e95ccae8-b573-4650-8dad-81f14dd268a8" />
+Check Schedual Task 
+
 
 
 
