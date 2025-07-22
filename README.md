@@ -83,5 +83,7 @@ Check Schedual Task
 
 
 Because the video is large, I uploaded it to LinkedIn - This video shows the stage of exploitation
-http://linkedin.com/in
+[http://linkedin.com/in](https://www.linkedin.com/posts/bashir-hasabelnabi_cybersecurity-soc-siem-activity-7353506367854256131-9WJr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFwzdDIBWE1WjziZuD20Duh9ttAddbZavQA)
+
+[http://linkedin.com/in](https://www.linkedin.com/posts/bashir-hasabelnabi_cybersecurity-soc-siem-activity-7353507192450211840-_PxT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFwzdDIBWE1WjziZuD20Duh9ttAddbZavQA)
 
